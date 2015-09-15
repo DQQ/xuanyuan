@@ -6,8 +6,14 @@
     <application
             android:icon="@drawable/icon"
             android:label="@string/app_name">
+        <activity android:name=".XYmainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
     </application>
     <instrumentation
             android:name="android.test.InstrumentationTestRunner"
-            android:targetPackage="com.cm.cleanmaster_cn"/>
+            android:targetPackage="com.cleanmaster.security_cn"/>
 </manifest>

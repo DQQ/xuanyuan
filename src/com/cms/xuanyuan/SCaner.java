@@ -13,8 +13,8 @@ public class SCaner extends ActivityInstrumentationTestCase2 {
     public Activity activity;
 
     private static Class<?> launchActivityClass;
-    private static String mainActivity = "";
-    private static String packageName = "";
+    private static String mainActivity = "com.cleanmaster_cn/ks.cm.antivirus.main.SplashActivity";
+    private static String packageName = "com.cleanmaster.security_cn";
 
     static {
         try {
