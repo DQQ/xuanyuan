@@ -13,7 +13,7 @@ public class SCaner extends ActivityInstrumentationTestCase2 {
     public Activity activity;
 
     private static Class<?> launchActivityClass;
-    private static String mainActivity = "ks.cm.antivirus.main.SplashActivity";
+    private static String mainActivity = "ks.cm.antivirus.scan.ScanMainActivity";
     private static String packageName = "com.cleanmaster.security_cn";
 
     static {
@@ -36,7 +36,9 @@ public class SCaner extends ActivityInstrumentationTestCase2 {
 
     public void testScaner_1() {
         //robotium test script
-        solo.waitForActivity(mainActivity,4000);
+        solo.waitForActivity(mainActivity, 2000);
+        //solo.clickOnButton("开始使用");
+
         //solo.clickOnButton("aaaa");
         //solo.clickOnView(solo.getButton(com.cleanmaster.security_cn.test.R.));
     }
