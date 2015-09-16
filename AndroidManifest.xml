@@ -9,7 +9,7 @@
             />
 
     <instrumentation
-            android:name="com.cms.xuanyuan.InstrumentationTestRunner"
+            android:name="com.cleanmaster.security_cn.test.InstrumentationTestRunner"
             android:targetPackage="com.cleanmaster.security_cn"/>
 
     <application

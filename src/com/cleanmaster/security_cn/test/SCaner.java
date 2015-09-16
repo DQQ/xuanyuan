@@ -1,4 +1,4 @@
-package com.cms.xuanyuan;
+package com.cleanmaster.security_cn.test;
 
 import android.app.Activity;
 import android.test.ActivityInstrumentationTestCase2;
