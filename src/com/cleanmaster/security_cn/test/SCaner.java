@@ -3,6 +3,7 @@ package com.cleanmaster.security_cn.test;
 import android.app.Activity;
 import android.test.ActivityInstrumentationTestCase2;
 import com.robotium.solo.Solo;
+import org.junit.Test;
 
 /**
  * Created by dongqingqing on 15/9/14.
@@ -13,7 +14,8 @@ public class SCaner extends ActivityInstrumentationTestCase2 {
     public Activity activity;
 
     private static Class<?> launchActivityClass;
-    private static String mainActivity = "ks.cm.antivirus.scan.ScanMainActivity";
+//    private static String mainActivity = "ks.cm.antivirus.scan.ScanMainActivity";
+    private static String mainActivity = "ks.cm.antivirus.main.SplashActivity";
     private static String packageName = "com.cleanmaster.security_cn";
 
     static {
@@ -34,12 +36,13 @@ public class SCaner extends ActivityInstrumentationTestCase2 {
         this.solo = new Solo(getInstrumentation(), getActivity());
     }
 
+    @Test
     public void testScaner_1() {
         //robotium test script
         solo.waitForActivity(mainActivity, 2000);
         //solo.clickOnButton("开始使用");
 
-        //solo.clickOnButton("aaaa");
+        solo.clickOnButton("防通知打扰");
         //solo.clickOnView(solo.getButton(com.cleanmaster.security_cn.test.R.));
     }
 
